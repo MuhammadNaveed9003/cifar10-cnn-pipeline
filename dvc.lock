@@ -1,0 +1,36 @@
+schema: '2.0'
+stages:
+  evaluate:
+    cmd: python src/evaluate.py
+    deps:
+    - path: data/processed/test.npz
+      hash: md5
+      md5: a2000057f823d89e5a9e7d85edc38ad1
+      size: 41767649
+    - path: models/model.pth
+      hash: md5
+      md5: 613fa23b38f60e85764dd655d0d4c715
+      size: 8710525
+    - path: src/evaluate.py
+      hash: md5
+      md5: 32c977d0c053106dbadfa03119a6cc1d
+      size: 2029
+    - path: src/train.py
+      hash: md5
+      md5: c595d7d4801e4755747b86ac1cca71bd
+      size: 3753
+    params:
+      params.yaml:
+        preprocess.image_size: 32
+        train.dense_units: 256
+        train.dropout_rate: 0.5
+        train.num_filters: 64
+    outs:
+    - path: metrics.json
+      hash: md5
+      md5: dd8a9cdb2fde25af9f2ad771baf929da
+      size: 55
+    - path: plots/confusion_matrix.png
+      hash: md5
+      md5: 08552c14430042d69224f882dd7057d6
+      size: 103543
