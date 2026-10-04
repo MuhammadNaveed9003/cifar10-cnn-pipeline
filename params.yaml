@@ -1,0 +1,14 @@
+preprocess:
+  val_size: 0.1
+  seed: 42
+  image_size: 32
+
+train:
+  num_filters: 64
+  dense_units: 256
+  dropout_rate: 0.5
+  learning_rate: 0.001
+  epochs: 20
+  batch_size: 128
+  augment_flip: true
+  seed: 42
