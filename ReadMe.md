@@ -9,3 +9,5 @@ dagshub https://dagshub.com/MuhammadNaveed9003/cifar10-cnn-pipeline.git (push)
 
 origin https://github.com/MuhammadNaveed9003/cifar10-cnn-pipeline.git (fetch)
 origin https://github.com/MuhammadNaveed9003/cifar10-cnn-pipeline.git (push)-
+I am performing Part A subpartA4
+I am performing Part A subpartA6
