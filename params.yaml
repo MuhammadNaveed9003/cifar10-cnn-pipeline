@@ -5,10 +5,10 @@ preprocess:
 
 train:
   num_filters: 64
-  dense_units: 256
-  dropout_rate: 0.5
-  learning_rate: 0.001
+  dense_units: 128           #256 to 128
+  dropout_rate: 0.3          #0.5 to 0.3
+  learning_rate: 0.0005      #0.01 to 0.0005
   epochs: 20
-  batch_size: 128
+  batch_size: 64             #128 to 64
   augment_flip: true
   seed: 42
